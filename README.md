@@ -48,7 +48,8 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
   - **Adaptive I1**
   ```
   cd ../../training/d2=16
-  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d16_ada_gn_startgn.prototxt --weights=net_iter_121531.caffemodel
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d16_ada_gn_startgn.prototxt --snapshot=net_iter_121531.solverstate
+  ```
   
   | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
