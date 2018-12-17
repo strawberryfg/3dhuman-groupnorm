@@ -57,7 +57,7 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
   
   Train around **47 *mm***, test around **66 *mm***.
   
-- **d2 = 32*
+- **d2 = 32**
   - **Adaptive I1**
   ```
   cd ../../training/d2=32
