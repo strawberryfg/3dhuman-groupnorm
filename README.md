@@ -43,3 +43,14 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
   | 8     | **1e-6** to 2e-7 after 37000 | 1:0.1:1   | Manual | [net_iter_121531.caffemodel](https://drive.google.com/open?id=1fgjHg0v2zzdlP9FD3wObwGtmITl7-0Lo)| [net_iter_121531.solverstate](https://drive.google.com/open?id=1YPGEiuNRXC54tn7a960v8ijq0mrAr5_R)|
   
   Train around **65 *mm***, test around **84 *mm***.
+  
+- **d2 = 16**
+  - **Adaptive I1**
+  ```
+  cd ../../training/d2=16
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d16_ada_gn_startgn.prototxt --weights=net_iter_121531.caffemodel
+  
+  | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 16     | 2.5e-5 to 5e-6 after 180000 | 0.01   | Adaptive I1 | [net_iter_277648.caffemodel](https://drive.google.com/open?id=1tP-jrr2P5ksvO18dct4mt-6A2WElTuF0) | [net_iter_277648.solverstate](https://drive.google.com/open?id=1ujcBNVjBuzkTd7mZGIN8UzA1etzRvtg1) |
+  
