@@ -3,4 +3,4 @@ What happens when you have to **scrupulously share** GPUs with **others in the l
 
 I give you this repo implementing **group normalization** version of **3d human pose heatmap** with **batch size = 1**.
 
-*Under construction* Only matches the performance of **H1** (heatmap loss only) as of now. Probably working on **I1** (heatmap + integral loss). 
+*Still under construction, probably faster than BART extension project* Only matches the performance of **H1** (heatmap loss only) as of now. 
