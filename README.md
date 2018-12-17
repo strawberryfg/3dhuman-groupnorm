@@ -21,8 +21,12 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
 - **d2 = 8**
   - **Adaptive I1**
   
+  
   Start from BN counterpart (model: [net_iter_381324.caffemodel](https://drive.google.com/open?id=19MIdUvYXC90u58UMtfoXCirVwCZD6dHw); solverstate: [net_iter_381324.solverstate](https://drive.google.com/open?id=1hygJdVEdwZvk5JueKtr8fZDhwIlfMqZO))
   ```
   cd ../../training/d2=8
-  
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d8_ada_gn.prototxt --weights=net_iter_381324.caffemodel
   ```
+  | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 8     | 2.5e-5 | 0.01   | Adaptive I1 | [net_iter_128489.caffemodel](https://drive.google.com/open?id=1-HVZolMWHPO7R1B_bjjoRLm6bP-1vE-H) | [net_iter_128489.solverstate](https://drive.google.com/open?id=1g5-ogIUVplDny3e_B_mXXcl8A5_EyRqR)|
