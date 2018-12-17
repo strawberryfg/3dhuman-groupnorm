@@ -4,3 +4,10 @@ What happens when you have to **scrupulously share** GPUs with **others in the l
 I give you this repo implementing **group normalization** version of **3d human pose heatmap** with **batch size = 1**. Memory occupation around **4GB**.
 
 *Still under construction, probably faster than BART extension project* Only matches the performance of **H1** (heatmap loss only) as of now. 
+
+
+----
+## Prelude
+For data, source code and installation, see the following two repos.
+[I1](https://github.com/strawberryfg/int-3dhuman-I1)
+[H1](https://github.com/strawberryfg/c2f-3dhm-human-caffe)
