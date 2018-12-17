@@ -30,4 +30,5 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
   | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 8     | 2.5e-5 | 0.01   | Adaptive I1 | [net_iter_128489.caffemodel](https://drive.google.com/open?id=1-HVZolMWHPO7R1B_bjjoRLm6bP-1vE-H) | [net_iter_128489.solverstate](https://drive.google.com/open?id=1g5-ogIUVplDny3e_B_mXXcl8A5_EyRqR)|
+  
   Train around **72 *mm***, test around **88 *mm***.
