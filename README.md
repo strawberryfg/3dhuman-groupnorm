@@ -17,9 +17,11 @@ For data, source code and installation, see the following two repos.
 ----
 ## Training 
 See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/strawberryfg/int-3dhuman-I1).
+
 - **d2 = 8**
   - **Adaptive I1**
-  Start from BN counterpart (model: [net_iter_381324.caffemodel] (https://drive.google.com/open?id=19MIdUvYXC90u58UMtfoXCirVwCZD6dHw); solverstate: [net_iter_381324.solverstate](https://drive.google.com/open?id=1hygJdVEdwZvk5JueKtr8fZDhwIlfMqZO))
+  
+  Start from BN counterpart (model: [net_iter_381324.caffemodel](https://drive.google.com/open?id=19MIdUvYXC90u58UMtfoXCirVwCZD6dHw); solverstate: [net_iter_381324.solverstate](https://drive.google.com/open?id=1hygJdVEdwZvk5JueKtr8fZDhwIlfMqZO))
   ```
   cd ../../training/d2=8
   
