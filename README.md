@@ -29,6 +29,16 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
   ```
   | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
   |:-:|:-:|:-:|:-:|:-:|:-:|
-  | 8     | 2.5e-5 | 0.01   | Adaptive I1 | [net_iter_128489.caffemodel](https://drive.google.com/open?id=1-HVZolMWHPO7R1B_bjjoRLm6bP-1vE-H) | [net_iter_128489.solverstate](https://drive.google.com/open?id=1g5-ogIUVplDny3e_B_mXXcl8A5_EyRqR)|
+  | 8     | 2.5e-5 to 5e-6 after 30000 | 0.01   | Adaptive I1 | [net_iter_128489.caffemodel](https://drive.google.com/open?id=1-HVZolMWHPO7R1B_bjjoRLm6bP-1vE-H) | [net_iter_128489.solverstate](https://drive.google.com/open?id=1g5-ogIUVplDny3e_B_mXXcl8A5_EyRqR)|
   
   Train around **72 *mm***, test around **88 *mm***.
+  
+  - **Manual**
+  
+  ```
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d8_ada_gn_startgn_manual.prototxt --snapshot=net_iter_128489.solverstate
+  ```
+  | d2 | lr   |  loss ratio of 2D HM:3D HM:integral   | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 8     | **1e-6** to 2e-7 after 37000 | 1:0.1:1   | Manual | [net_iter_121531.caffemodel](https://drive.google.com/open?id=1fgjHg0v2zzdlP9FD3wObwGtmITl7-0Lo)| [net_iter_121531.solverstate](https://drive.google.com/open?id=1YPGEiuNRXC54tn7a960v8ijq0mrAr5_R)|
+  
