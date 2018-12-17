@@ -9,5 +9,7 @@ I give you this repo featuring **group normalization** version of **3d human pos
 ----
 ## Prelude
 For data, source code and installation, see the following two repos.
+
 [I1](https://github.com/strawberryfg/int-3dhuman-I1)
+
 [H1](https://github.com/strawberryfg/c2f-3dhm-human-caffe)
