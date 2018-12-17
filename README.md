@@ -70,4 +70,17 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
   
   Train around **42 *mm***, test around **56 *mm***.
   
+- **d2 = 64**
+  - **Adaptive I1**
+  ```
+  cd ../../training/d2=64
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d64_ada_gn_startgn.prototxt --snapshot=net_iter_350104.solverstate
+  ```
+  
+  | d2 | lr   |  "heatmap2" init std  | loss | Caffe Model  | Solver State |
+  |:-:|:-:|:-:|:-:|:-:|:-:|
+  | 32     | 2.5e-5 to 5e-6 after 460000 | 0.01   | Adaptive I1 | [net_iter_516722.caffemodel](https://drive.google.com/open?id=1DEHRDTBcK_7Sp33MHB2evmMzHqofTAW3) | [net_iter_516722.solverstate](https://drive.google.com/open?id=1HZwcDQoGcszNPBrwBUGnoEzRjJ7v89oC) |
+  
+  Train around **42 *mm***, test around **56 *mm***.
+  
   
