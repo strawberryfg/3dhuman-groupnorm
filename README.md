@@ -42,3 +42,4 @@ See definition of **Adaptive I1**, **Manual** in [this repo](https://github.com/
   |:-:|:-:|:-:|:-:|:-:|:-:|
   | 8     | **1e-6** to 2e-7 after 37000 | 1:0.1:1   | Manual | [net_iter_121531.caffemodel](https://drive.google.com/open?id=1fgjHg0v2zzdlP9FD3wObwGtmITl7-0Lo)| [net_iter_121531.solverstate](https://drive.google.com/open?id=1YPGEiuNRXC54tn7a960v8ijq0mrAr5_R)|
   
+  Train around **65 *mm***, test around **84 *mm***.
